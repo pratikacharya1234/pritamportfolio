@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body
+{
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 /* navbar */
 .navbar {
-  padding: 10px;
   color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
 
 }
 
@@ -29,13 +37,14 @@ color: #6E07F3;
 /* info */
 
 .about-container {
+  background-color: #6E07F3;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 120px;
 }
 
 .about-container h1 {
   font-size: 24px;
-  color: #333;
+  color: #000000;
 }
 
 .profile-photo {
@@ -47,37 +56,40 @@ color: #6E07F3;
 
 .about-container h2 {
   font-size: 20px;
-  color: #6E07F3;
+  color: #000000;
   margin-top: 20px;
 }
 
 .about-container p {
   font-size: 16px;
-  color: #333;
+  color: #000000;
   line-height: 1.5;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 /* home */
 .container {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
+}
+
+.container h1:hover{
+  color: #6E07F3;
 }
 
 .card {
-  background-color: #f0f0f0;
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
 }
 
 .logo {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .logo img {
-  width: 200px;
-  height: auto;
+  width: 240px;
+  height: 280px;
 }
 /* project */
 .experties {
@@ -107,7 +119,7 @@ color: #6E07F3;
 
 .project-item {
   position: relative;
-  width: 200px;
+  width: 260px;
   height: 200px;
   background-size: cover;
   background-position: center;
@@ -115,14 +127,13 @@ color: #6E07F3;
   border: 10px solid #000000;
   border-radius: 20px;
   transition: border-color 0.3s ease;
+  margin-left: 60px;
 }
 
-.project-item:hover {
-  border-color: #6E07F3; /* Change border color on hover */
-}
+
 
 .project-item::after {
-  content: "<Click to view>"; /* Display text on hover */
+  content: "<Click to view>"; 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -136,7 +147,8 @@ color: #6E07F3;
 }
 
 .project-item:hover::after {
-  opacity: 1; /* Show text on hover */
+  opacity: 1;
+  background-color: #333; 
 }
 
 .modal {
@@ -231,7 +243,7 @@ color: #6E07F3;
 
 .modal-content input,
 .modal-content textarea {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin-top: 10px;
   border: 1px solid #ccc;
@@ -336,6 +348,13 @@ color: #6E07F3;
 
 
 @media (max-width: 768px) {
+  .navbar{
+     opacity: 0;
+  }
+
+  .container{
+    margin-top: 10px;
+  }
   .project-list {
     display: flex;
     justify-content: space-around;
